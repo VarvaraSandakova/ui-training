@@ -3,7 +3,10 @@
 ### feature-1
 Create 'User' constructor function and implement following interface
 ```javascript
-function User {}
+function User {
+  // ...
+}
+
 const u = new User();
 
 u.setName(name);

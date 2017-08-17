@@ -37,3 +37,14 @@ const bookmark = bookmarkView.render();
 
 document.body.appendChild(bookmark); // should render bookmark in the DOM
 ```
+
+### feature-3
+BookmarkView class should emit 'click' event when a user clicks on any element and pass 'url' as a parameter.
+
+```javascript
+const bookmarkView = new BookmarkView(url, imagePath, description);
+
+bookmarkView.on('click', function(url) {
+    console.log(url);
+});
+```
